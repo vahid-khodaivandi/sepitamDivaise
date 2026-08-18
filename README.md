@@ -1,2 +1,0 @@
-# sepitamDivaise
-sepitam divaise management
