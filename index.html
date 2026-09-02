@@ -3254,17 +3254,17 @@ function jMonthLength(jy, jm) {
                 }
             }
             // duplicate printer conflict
-            const printerMap = {};
-            for (const c of carts) {
-                if (c.currentPrinterId && c.currentStatus !== 'scrapped' && c.currentStatus !== 'missing') {
-                    if (printerMap[c.currentPrinterId]) {
-                        alerts.push({ severity: 'bad', msg: 'کارتریج‌های ' + printerMap[c.currentPrinterId] + ' و ' + c
-                                .serialNumber + ' همزمان روی یک پرینتر نصب شده‌اند.' });
-                    } else {
-                        printerMap[c.currentPrinterId] = c.serialNumber;
-                    }
-                }
-            }
+            //const printerMap = {};
+            //for (const c of carts) {
+            //    if (c.currentPrinterId && c.currentStatus !== 'scrapped' && c.currentStatus !== 'missing') {
+            //        if (printerMap[c.currentPrinterId]) {
+            //            alerts.push({ severity: 'bad', msg: 'کارتریج‌های ' + printerMap[c.currentPrinterId] + ' و ' + c
+            //                    .serialNumber + ' همزمان روی یک پرینتر نصب شده‌اند.' });
+            //        } else {
+            //            printerMap[c.currentPrinterId] = c.serialNumber;
+            //        }
+            //    }
+            //}
 
             // ================================================================
             // آیکون کوچک برای هشدارها (۱۴px)
