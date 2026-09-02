@@ -2370,7 +2370,7 @@
         };
 
         const STATUS = {
-            active: { label: 'فعال', cls: 'ok' },
+            active: { label: '', cls: 'ok' },
             inactive: { label: 'غیرفعال', cls: 'bad' },
             repair: { label: 'در تعمیر', cls: 'warn' },
             scrap: { label: 'اسقاطی', cls: 'muted' }
@@ -2378,13 +2378,10 @@
 
         const CARTRIDGE_STATUS = {
             active: { label: 'فعال', cls: 'ok' },
-            inUse: { label: 'در حال استفاده', cls: 'ok' },
-            recharged: { label: 'شارژ شده', cls: 'warn' },
-            inRepair: { label: 'در دست تعمیر', cls: 'warn' },
+            inRepair: { label: 'غیر فعال', cls: 'warn' },
             ready: { label: 'انبار', cls: 'muted' },
             scrapped: { label: 'اسقاط شده', cls: 'bad' },
             missing: { label: 'مفقود', cls: 'bad' },
-            empty: { label: 'اتمام شارژ', cls: 'bad' }
         };
 
         const TAG_PALETTE = [
